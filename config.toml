@@ -1,0 +1,22 @@
+baseURL = "https://plina.space"
+theme = 'hugo-bearblog'
+
+title = "Lina's Space"
+author = "Lina"
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+languageCode = "en-GB"
+
+enableRobotsTXT = true
+
+disableKinds = ["taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
+[permalinks]
+  blog = "/:slug/"
+  tags = "/blog/:slug"
+
+[params]
+  description = "Lina's personal space"
+  favicon = "images/favicon.png"
+  images = ["images/share.png"]
+  title = "Lina's Space"
+  hideMadeWithLine = true
