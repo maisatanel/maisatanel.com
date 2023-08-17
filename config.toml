@@ -1,7 +1,7 @@
-baseURL = "https://plina.space"
+baseURL = "https://maisatanel.com"
 theme = 'hugo-bearblog'
 
-title = "Lina's Space"
+title = "maisatanel"
 author = "Lina"
 copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
 languageCode = "en-GB"
@@ -15,8 +15,8 @@ ignoreErrors = ["error-disable-taxonomy"]
   tags = "/blog/:slug"
 
 [params]
-  description = "Lina's personal space"
+  description = "Lina's space"
   favicon = "images/favicon.png"
   images = ["images/share.png"]
-  title = "Lina's Space"
+  title = "maisatanel"
   hideMadeWithLine = true
