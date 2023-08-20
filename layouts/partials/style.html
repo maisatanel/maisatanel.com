@@ -12,13 +12,39 @@
       color: #444;
     }
     
-    .header {
+    div.header {
       display: flex;
-      align-items: center;
+      /*align-items: center;*/
     }
-    .header_text {
+    .header_title {
       padding-left: 20px;
     }
+    .header_articles {
+      margin-left: auto;
+      margin-right: 0;
+      padding-left: 20px;
+    }
+    div.compact_title {
+        vertical-align: top;
+        display: inline-block;
+        text-align: center;
+        width: 120px;
+    }
+    .header_compact_title {
+        display: block;
+    }
+
+    @media screen and (max-width: 589px) {
+      .header_title {
+          display: none !important;
+      }
+    }
+    @media screen and (min-width: 590px) {
+      .header_compact_title {
+          display: none !important;
+      }
+    }
+
     h1,
     h2,
     h3,
