@@ -17,7 +17,8 @@ This is an article I've written a while ago detailing the concept of pods within
 ---
 
 # Используем функционал Podman вместо docker-compose на примере Gitea
- В своем порыве использовать только технологии компании Red Hat, я решила освоить их first-party контейнерный стек. В основе стека лежит `podman`- движок для контейнеров, работающий без демон-процесса и без root привилегий по умолчанию. `podman`интегрируется в экосистему Red Hat - запуск контейнеров производится посредством `systemd` ; контейнеры интегрируются с SELinux. Конечно, самая главная причина использовать `podman`вместо Docker - его включение по умолчанию в дистрибутив Red Hat Enterprise Linux и подобные.
+
+В своем порыве использовать только технологии компании Red Hat, я решила освоить их first-party контейнерный стек. В основе стека лежит `podman`- движок для контейнеров, работающий без демон-процесса и без root привилегий по умолчанию. `podman`интегрируется в экосистему Red Hat - запуск контейнеров производится посредством `systemd` ; контейнеры интегрируются с SELinux. Конечно, самая главная причина использовать `podman`вместо Docker - его включение по умолчанию в дистрибутив Red Hat Enterprise Linux и подобные.
 
 ### podman-compose
 
@@ -147,7 +148,9 @@ d38b33e5e047  gitea       Running     5 minutes ago  62511c70363d  3
 ```
 Gitea успешно запустился и доступен по ссылке http://localhost:3000.
 
-![](https://habrastorage.org/r/w1560/getpro/habr/upload_files/721/d53/b0c/721d53b0c05e9c48bf86a7fa765ef76e.png)### Автозапуск с systemd
+![](https://habrastorage.org/r/w1560/getpro/habr/upload_files/721/d53/b0c/721d53b0c05e9c48bf86a7fa765ef76e.png)
+
+### Автозапуск с systemd
 
 `podman` тесно интегрируется с `systemd`. Готовая конфигурация контейнеров экспортируется в виде `systemd`сервисов:
 
